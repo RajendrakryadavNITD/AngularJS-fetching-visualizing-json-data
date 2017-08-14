@@ -1,0 +1,25 @@
+<html> 
+    <head> 
+    <title>Data Visualization</title>
+		<script src="angular.js"></script>
+		<script src="app.js"></script>
+    </head>
+    <body>
+		<div ng-app="myApp" ng-controller="myCtrl">
+	        <table id="my_table" border="2">
+	        	<tr>
+	        		<th>SN</th>
+	        		<th>calls</td>
+	        		<th>Quallified</td>
+	        		<th>cost</td>
+	        	</tr>
+	        	<tr ng-repeat="value in array" >
+	        		<td>{{value}}</td>
+	        		<td>{{data.calls[value]}}</td>
+	        		<td>{{data.Quallified[value]}}</td>
+	        		<td>{{data.cost[value]}}</td>
+	        	</tr>
+	        </table> 
+        </div>
+    </body>
+</html>
